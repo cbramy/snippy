@@ -22,7 +22,7 @@ module.exports = Snippy =
     @subscriptions = new CompositeDisposable
 
     # adds snippy commands
-    @subscriptions.add atom.commands.add 'atom-workspace', 'snippy:submit': => @submit()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'snippy:share': => @share()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -30,5 +30,5 @@ module.exports = Snippy =
   serialize: ->
     snippyViewState: @snippyView.serialize()
 
-  submit: ->
-    console.log "Snippy!"
+  share: ->
+    console.log "Code shared!"

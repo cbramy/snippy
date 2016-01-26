@@ -5,8 +5,7 @@
   "description": "Share your code on various snippet websites.",
   "keywords": ["code", "snippet", "share", "snippy", "languages"],
   "activationCommands": {
-    "atom-workspace": "snippy:submit",
-    "atom-workspace": "snippy:license"
+    "atom-workspace": "snippy:share"
   },
   "repository": "https://github.com/cbramy/snippy",
   "license": "Apache License v2",

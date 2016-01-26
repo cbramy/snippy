@@ -14,8 +14,8 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Submit Code'
-      'command': 'snippy:submit'
+      'label': 'Share Code'
+      'command': 'snippy:share'
     }
   ]
 'menu': [
@@ -25,13 +25,9 @@
       'label': 'Snippy'
       'submenu': [
         {
-          'label': 'Submit Code'
-          'command': 'snippy:submit'
+          'label': 'Share Code'
+          'command': 'snippy:share'
         },
-        {
-          'label': 'Show License'
-          'command': 'snippy:license'
-        }
       ]
     ]
   }
