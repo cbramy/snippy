@@ -1,0 +1,17 @@
+{
+  "name": "snippy",
+  "main": "./lib/snippy",
+  "version": "0.0.0",
+  "description": "Share your code on various snippet websites.",
+  "keywords": ["code", "snippet", "share", "snippy", "languages"],
+  "activationCommands": {
+    "atom-workspace": "snippy:submit",
+    "atom-workspace": "snippy:license"
+  },
+  "repository": "https://github.com/cbramy/snippy",
+  "license": "Apache License v2",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
