@@ -8,9 +8,12 @@
     "atom-workspace": "snippy:share"
   },
   "repository": "https://github.com/cbramy/snippy",
-  "license": "Apache License v2",
+  "license": "Apache-2.0",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "4.0.1",
+    "atom-space-pen-views": "^2.1.1"
+  }
 }

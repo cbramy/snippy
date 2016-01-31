@@ -13,5 +13,114 @@
 // limitations under the License.
 @import "ui-variables";
 
-.snippy {
+@controlPaneSize: 33%;
+  @expiryButtonMinWidth: 50px;
+
+@infoPanelSize: 66%;
+@infoPanelHeight: 100%;
+
+
+.share-container {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  > .share-container-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: stretch;
+
+    > .share-controls {
+      order: 1;
+      width: @controlPaneSize;
+
+      display: flex;
+      flex-direction: column;
+
+      > .header {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 5px 10px;
+
+        > .header-label {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          > span:nth-child(1) {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      > .controls {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px 5px 10px;
+
+        > .select-grammar {
+          order: 2;
+          width: 100%;
+        }
+
+        > .controls-toolbar {
+          order: 1;
+          width: 100%;
+
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          > .controls-toolbar-expiry {
+            order: 1;
+            flex-grow: 5;
+
+            > .btn {
+              min-width: @expiryButtonMinWidth;
+            }
+          }
+
+          > button.btn-error {
+            order: 2;
+            flex-grow: 1;
+          }
+
+          > button.btn-info {
+            order: 3;
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+
+    > .share-details {
+      order: 2;
+
+      width: @infoPanelSize;
+
+      height: 85px;
+      min-height: 85px;
+
+      margin: 5px 10px 5px 10px;
+      border: solid 1px @base-border-color;
+      background-color: @base-background-color;
+    }
+  }
 }
